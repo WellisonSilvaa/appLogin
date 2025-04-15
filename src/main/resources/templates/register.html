@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #f4f6f8;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          margin: 0;
+        }
+
+        .signup-container {
+          background-color: white;
+          padding: 40px;
+          border-radius: 10px;
+          box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+          width: 100%;
+          max-width: 450px;
+        }
+
+        h2 {
+          text-align: center;
+          margin-bottom: 20px;
+        }
+
+        label {
+          display: block;
+          margin-bottom: 5px;
+          font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 15px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+        }
+
+        button {
+          width: 100%;
+          padding: 10px;
+          background-color: #43a047;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          font-size: 16px;
+          cursor: pointer;
+        }
+
+        button:hover {
+          background-color: #388e3c;
+        }
+
+        .back-link {
+          text-align: center;
+          margin-top: 15px;
+        }
+
+        .back-link a {
+          color: #1976d2;
+          text-decoration: none;
+          font-weight: bold;
+        }
+
+        .back-link a:hover {
+          text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<div class="signup-container">
+    <h2>Cadastro</h2>
+    <form method="POST">
+        <label for="username">Nome de Usuário</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Senha</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="confirm-password">Confirme a Senha</label>
+        <input type="password" id="confirm-password" name="confirmPassword" required>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <div class="back-link">
+        <p>Já tem uma conta? <a href="login.html">Voltar para o login</a></p>
+    </div>
+</div>
+</body>
+</html>
